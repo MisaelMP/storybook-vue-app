@@ -6,6 +6,7 @@ export default {
 	argTypes: {
 		label: 'String',
 		backgroundColor: { control: 'color' },
+    color: { control: 'color'}
 	},
 };
 

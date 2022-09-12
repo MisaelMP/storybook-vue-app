@@ -14,7 +14,7 @@
 	import { reactive, computed } from 'vue';
 
 	export default {
-		name: 'btn',
+		name: 'buttonItem',
 
 		props: {
 			label: {
@@ -34,6 +34,10 @@
 				type: String,
 				default: '#efcccf',
 			},
+			color: {
+				type: String,
+				default: '#000',
+			},
 		},
 
 		emits: ['click'],
@@ -43,7 +47,8 @@
 			return {
 				style: computed(() => ({
 					backgroundColor: props.backgroundColor,
-					borderRadius: props.rounded ? '3em' : '0px',
+					color: props.color,
+					borderRadius: props.rounded ? '3rem' : '0px',
 				})),
 				onClick() {
 					emit('clicked');
