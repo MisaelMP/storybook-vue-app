@@ -17,7 +17,7 @@ const Template = (args) => ({
 		return { args };
 	},
 	// And then the `args` are bound to your component with `v-bind="args"`
-	template: '<card v-bind="args" />',
+	template: '<Card v-bind="args" />',
 });
 
 export const Rounded = Template.bind({});
